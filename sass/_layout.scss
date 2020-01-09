@@ -3,13 +3,15 @@
     margin: 8rem auto;
     background-color: var(--color-grey-light-1);
     box-shadow: var(--shadow-dark);
+
+    min-height: 50rem;
 }
 
 .header {
     font-size: 1.4rem;
     height: 7rem;
     background-color: var(--color-white);
-    border-bottom: var(--color-grey-light-2);
+    border-bottom: solid 1px var(--color-grey-light-1);
     display: flex;
     justify-content: space-between;
     align-items: center;
