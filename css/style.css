@@ -130,7 +130,8 @@ body {
   align-items: center; }
 
 .content {
-  display: flex; }
+  display: flex;
+  min-height: 80rem; }
 
 .sidebar {
   background-color: var(--color-grey-dark-1);
