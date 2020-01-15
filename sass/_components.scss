@@ -114,8 +114,6 @@
     }
 }
 
-///////////////////////////////
-// SIDEBAR
 .side-nav {    
     font-size: 1.4rem;
     list-style: none;  
@@ -166,5 +164,29 @@
         width: 1.75rem; 
         margin-right: 2rem;
         fill: currentColor;        
+    }
+}
+
+///////////////////////////////
+// LEGAL TEXT
+.legal {
+    font-size: 1.2rem;
+    color: var(--color-grey-light-4);
+    text-align: center;
+    padding: 2.5rem;
+}
+
+///////////////////////////////
+// GALLERY
+.gallery{
+    display: flex;
+
+    &__item{
+
+    }
+
+    &__photo{
+        width: 100%;
+        display: block; // this avoids small space underneath an image which happens when we leave it as inline element
     }
 }
