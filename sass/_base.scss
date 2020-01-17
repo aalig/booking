@@ -15,6 +15,8 @@
     --color-grey-dark-3: #999;
 
     --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .3);
+
+    --border-line: solid 1px var(--color-grey-light-1);
 }
 
 * {
@@ -42,7 +44,6 @@ body {
     background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
     background: cover;
     background-repeat: no-repeat;
-
 
     min-height: 100vh;
 }
