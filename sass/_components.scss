@@ -474,21 +474,21 @@
     }
 
     &__btn-visible {                
-        padding: 2rem 6rem;
-
-        &:hover {
-            transform: translateY(100%);
-        }
+        padding: 2rem 6rem;       
     }
 
     &__btn-invisible {            
         padding: 2rem 0;
         position: absolute;
         top: -100%;
-        left: 0;     
-        
-        &:hover {
-            top: 0;
-        }
+        left: 0;          
     }   
+
+    &__btn:hover &__btn-visible{
+        transform: translateY(100%);
+    }
+
+    &__btn:hover &__btn-invisible{
+        top: 0;
+    }
 }
