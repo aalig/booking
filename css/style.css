@@ -336,6 +336,45 @@ body {
   display: flex;
   justify-content: center; }
 
+.cta {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 3.5rem 0;
+  background-color: var(--color-white); }
+  .cta__text {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 2rem; }
+  .cta__btn {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--color-white);
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10rem;
+    background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
+    cursor: pointer;
+    position: relative;
+    overflow: hidden; }
+    .cta__btn > * {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      transition: all .2s; }
+    .cta__btn:hover {
+      background-image: linear-gradient(to left, var(--color-primary-light), var(--color-primary-dark)); }
+  .cta__btn-visible {
+    padding: 2rem 6rem; }
+    .cta__btn-visible:hover {
+      transform: translateY(100%); }
+  .cta__btn-invisible {
+    padding: 2rem 0;
+    position: absolute;
+    top: -100%;
+    left: 0; }
+    .cta__btn-invisible:hover {
+      top: 0; }
+
 .container {
   max-width: 120rem;
   margin: 8rem auto;

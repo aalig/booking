@@ -434,3 +434,61 @@
     display: flex;
     justify-content: center;
 }
+
+///////////////////////////////
+// CALL TO ACTION
+.cta {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 3.5rem 0;
+    background-color: var(--color-white);
+
+    &__text{
+        font-size: 2rem;
+        font-weight: 300;
+        margin-bottom: 2rem;
+    }
+
+    &__btn{
+        font-size: 1.5rem;
+        font-weight: 300;
+        color: var(--color-white);
+        text-transform: uppercase;
+        border: none;                 
+        border-radius: 10rem;
+        background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;        
+
+        & > * {
+            display: inline-block;
+            width: 100%;    
+            height: 100%;    
+            transition: all .2s;
+        }
+
+        &:hover{
+            background-image: linear-gradient(to left, var(--color-primary-light), var(--color-primary-dark));
+        }
+    }
+
+    &__btn-visible {                
+        padding: 2rem 6rem;
+
+        &:hover {
+            transform: translateY(100%);
+        }
+    }
+
+    &__btn-invisible {            
+        padding: 2rem 0;
+        position: absolute;
+        top: -100%;
+        left: 0;     
+        
+        &:hover {
+            top: 0;
+        }
+    }   
+}
