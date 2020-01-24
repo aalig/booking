@@ -471,14 +471,18 @@
         &:hover{
             background-image: linear-gradient(to left, var(--color-primary-light), var(--color-primary-dark));
         }
+
+        &:focus{
+            outline: none;
+        }
     }
 
     &__btn-visible {                
         padding: 2rem 6rem;
+    }
 
-        &:hover {
-            transform: translateY(100%);
-        }
+    &__btn:hover &__btn-visible{
+        transform: translateY(100%);
     }
 
     &__btn-invisible {            
@@ -486,9 +490,9 @@
         position: absolute;
         top: -100%;
         left: 0;     
-        
-        &:hover {
-            top: 0;
-        }
     }   
+
+    &__btn:hover &__btn-invisible{
+        top: 0;
+    }
 }
