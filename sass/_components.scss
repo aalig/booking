@@ -146,7 +146,7 @@
         }   
         
         @media only screen and (max-width: $bp-small){
-            font-size: 1.2srem;  
+            font-size: 1.2rem;  
         }      
     }
 
@@ -562,22 +562,26 @@
         &:hover{
             background-image: linear-gradient(to left, var(--color-primary-light), var(--color-primary-dark));
         }
+
+        &:focus{
+            outline: none;
+        }
     }
 
     &__btn-visible {                
-        padding: 2rem 6rem;       
+        padding: 2rem 6rem;
+    }
+
+    &__btn:hover &__btn-visible{
+        transform: translateY(100%);
     }
 
     &__btn-invisible {            
         padding: 2rem 0;
         position: absolute;
         top: -100%;
-        left: 0;          
+        left: 0;     
     }   
-
-    &__btn:hover &__btn-visible{
-        transform: translateY(100%);
-    }
 
     &__btn:hover &__btn-invisible{
         top: 0;

@@ -145,7 +145,7 @@ body {
         justify-content: center; } }
     @media only screen and (max-width: 37.5em) {
       .side-nav__item {
-        font-size: 1.2srem; } }
+        font-size: 1.2rem; } }
   .side-nav__item::before {
     content: "";
     position: absolute;
@@ -437,15 +437,17 @@ body {
       transition: all .2s; }
     .cta__btn:hover {
       background-image: linear-gradient(to left, var(--color-primary-light), var(--color-primary-dark)); }
+    .cta__btn:focus {
+      outline: none; }
   .cta__btn-visible {
     padding: 2rem 6rem; }
+  .cta__btn:hover .cta__btn-visible {
+    transform: translateY(100%); }
   .cta__btn-invisible {
     padding: 2rem 0;
     position: absolute;
     top: -100%;
     left: 0; }
-  .cta__btn:hover .cta__btn-visible {
-    transform: translateY(100%); }
   .cta__btn:hover .cta__btn-invisible {
     top: 0; }
 
